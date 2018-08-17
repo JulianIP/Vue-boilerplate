@@ -1,0 +1,27 @@
+{
+  "name": "Vue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "vue-cli-service serve --open",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "dev": "npm run serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vue/cli-service": "^3.0.1",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
+    "vue": "^2.5.17",
+    "vue-carousel": "^0.10.0",
+    "vue-cli": "^2.9.6",
+    "vue-material": "^1.0.0-beta-10.2",
+    "vue-resource": "^1.5.1",
+    "vue-router": "^3.0.1",
+    "vue-template-compiler": "^2.5.17"
+  }
+}
