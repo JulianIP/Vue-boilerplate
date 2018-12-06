@@ -1,12 +1,12 @@
 <template>
     <div class="page-container">
         <md-app md-waterfall md-mode="flexible" class="page">
-            <md-app-toolbar class="black-background md-large">
+            <md-app-toolbar class="white-background md-large">
                 <div class="md-toolbar-row">
                     <md-button class="md-icon-button" @click="menuVisible = !menuVisible">
-                        <md-icon class="white-font">menu</md-icon>
+                        <md-icon class="black-font">menu</md-icon>
                     </md-button>
-                    <span class="md-title white-font height30"><img class="logo" src="./assets/imgs/logo.png"></span>
+                    <span class="md-title black-font height30"><img class="logo" src="./assets/imgs/logo.png"></span>
                 </div>
             </md-app-toolbar>
             <md-app-drawer class="sidebar" :md-active.sync="menuVisible">
@@ -18,7 +18,7 @@
                     </md-list-item>
                 </md-list>
             </md-app-drawer>
-            <md-app-content>
+            <md-app-content class="grey-background">
                 <router-view></router-view>
             </md-app-content>
         </md-app> 
@@ -38,37 +38,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>    
-  .white-font {
-      color:#ffffff!important
-  }
-  .height30 {
-      height:30px;
-  }
-  .md-title {      
-      margin-left: calc(50% - 100px);
-      img {          
-         width:100px;
-      }
-  }
-  .black-background {
-      background-color:#212121!important;
-  }
-  .sidebar {
-      max-width:20%;
-  }
-  .md-app {
-    max-height: 400px;
-    border: 1px solid rgba(#000, .12);
-  }
-  .page {
-      min-height:100vh;
-  }
-   // Demo purposes only
-  .md-drawer {
-    width: 230px;
-    max-width: calc(100vw - 125px);
-  }
+<style lang="scss" scoped>  
+  @import "assets/sass/app.scss"
 </style>
 
 
