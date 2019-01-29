@@ -1,0 +1,35 @@
+@import "colors.scss";
+
+.black-font {
+    color:$black;
+}
+.height30 {
+    height:30px;
+}
+.md-title {      
+    margin-left: calc(50% - 100px);
+    img {          
+       width:100px;
+    }
+}
+.white-background {
+    background-color:$white;
+}
+.grey-background {
+    background-color:$bg-color-body;
+}
+.sidebar {
+    max-width:20%;
+}
+.md-app {
+  max-height: 400px;
+  border: 1px solid rgba($black, .12);
+}
+.page {
+    min-height:100vh;
+}
+ // Demo purposes only
+.md-drawer {
+  width: 230px;
+  max-width: calc(100vw - 125px);
+}
