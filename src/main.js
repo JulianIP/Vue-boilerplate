@@ -24,7 +24,6 @@ var vueInstance = new Vue({
     render: h => h(App),
     router,
     data: {
-        username:"Cachi",
         routes: routes.slice(1,routes.length)
     }
 })

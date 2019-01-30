@@ -1,12 +1,14 @@
 <template>
     <div class="page-container">
-        <md-app md-waterfall md-mode="flexible" class="page">
-            <md-app-toolbar class="white-background md-large">
+        <md-app md-scrollbar md-waterfall md-mode="fixed" class="page">
+            <md-app-toolbar class="white-background">
                 <div class="md-toolbar-row">
-                    <md-button class="md-icon-button" @click="menuVisible = !menuVisible">
-                        <md-icon class="black-font">menu</md-icon>
-                    </md-button>
-                    <span class="md-title black-font height30"><img class="logo" src="./assets/imgs/logo.png"></span>
+                    <div class="md-toolbar-section-start">
+                        <md-button class="md-icon-button" @click="menuVisible = !menuVisible">
+                            <md-icon class="black-font">menu</md-icon>
+                        </md-button>
+                        <span class="md-title black-font height30"><img class="logo" src="./assets/imgs/logo.png"></span>
+                    </div>
                 </div>
             </md-app-toolbar>
             <md-app-drawer class="sidebar" :md-active.sync="menuVisible">
@@ -18,7 +20,7 @@
                     </md-list-item>
                 </md-list>
             </md-app-drawer>
-            <md-app-content class="grey-background">
+            <md-app-content class="height-auto min-height-100 grey-background">
                 <router-view></router-view>
             </md-app-content>
         </md-app> 
@@ -27,7 +29,7 @@
 
 <script>
 
-export default {
+export default { 
     data() {
         return {
             menuVisible: false,
